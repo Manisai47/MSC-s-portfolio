@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body>
+        <div id="loader">
+            <div class="spinner"></div>
+            <h1>Loading...</h1>
+        </div>
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
+        <!-- Rest of your existing HTML -->
+    
+        <script>
+            // Hide the loader after the page has loaded
+            window.addEventListener("load", () => {
+                const loader = document.getElementById("loader");
+                loader.style.opacity = "0";
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 500);
+            });
+        </script>
+    </body>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangu Mani Sai Chary | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">MSC's Portfolio</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Rangu Mani Sai Chary">Rangu Mani Sai Chary</h1>
+                <p class="subtitle">Web Developer</p>
+                <div class="scroll-indicator">
+                    <span>Scroll Down</span>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://i.ibb.co/Lr67ms7/msc-pfp.jpg" alt="Rangu Mani Sai Chary">
+                    </div>
+                    <div class="about-text">
+                        <p>HELLO! I am "Mani sai" a passionate web developer with expertise in creating dynamic and user-friendly websites. My goal is to craft clean, efficient, and innovative code that delivers a seamless experience to users.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="section-container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="fade-up">
+                        <i data-lucide="code-2"></i>
+                        <h3>HTML</h3>
+                        <div class="skill-level">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up">
+                        <i data-lucide="palette"></i>
+                        <h3>CSS</h3>
+                        <div class="skill-level">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up">
+                        <i data-lucide="file-json"></i>
+                        <h3>JavaScript</h3>
+                        <div class="skill-level">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up">
+                        <i data-lucide="database"></i>
+                        <h3>MongoDB</h3>
+                        <div class="skill-level">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up">
+                        <i data-lucide="server"></i>
+                        <h3>Node.js</h3>
+                        <div class="skill-level">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up">
+                        <i data-lucide="binary"></i>
+                        <h3>Python</h3>
+                        <div class="skill-level">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up">
+                        <i data-lucide="cpu"></i>
+                        <h3>C Language</h3>
+                        <div class="skill-level">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up">
+                        <i data-lucide="atom"></i>
+                        <h3>React.js</h3>
+                        <div class="skill-level">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-content">
+                            <h3>To-Do List</h3>
+                            <p>A clean and efficient task management application</p>
+                            <div class="project-links">
+                                <a href="https://manisai47.github.io/To-doList/" target="_blank" rel="noopener noreferrer" class="btn">
+                                    <i data-lucide="external-link"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-content">
+                            <h3>Currency Converter</h3>
+                            <p>Real-time currency conversion tool</p>
+                            <div class="project-links">
+                                <a href="https://manisai47.github.io/Currency-converter/" target="_blank" rel="noopener noreferrer" class="btn">
+                                    <i data-lucide="external-link"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-content">
+                            <h3>Password Generator</h3>
+                            <p>Secure password generation tool</p>
+                            <div class="project-links">
+                                <a href="https://manisai47.github.io/Password-generator/" target="_blank" rel="noopener noreferrer" class="btn">
+                                    <i data-lucide="external-link"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-content">
+                            <h3>Search Filter Bar</h3>
+                            <p>Dynamic search and filtering component</p>
+                            <div class="project-links">
+                                <a href="https://manisai47.github.io/search-filter-bar/" target="_blank" rel="noopener noreferrer" class="btn">
+                                    <i data-lucide="external-link"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-content">
+                            <h3>Flip Coin</h3>
+                            <p>Interactive coin flip animation</p>
+                            <div class="project-links">
+                                <a href="https://manisai47.github.io/flip-coin/" target="_blank" rel="noopener noreferrer" class="btn">
+                                    <i data-lucide="external-link"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-card" data-aos="fade-up">
+                        <i data-lucide="mail"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:manisai777777@gmail.com">manisai777777@gmail.com</a>
+                    </div>
+                    <div class="contact-card" data-aos="fade-up">
+                        <i data-lucide="phone"></i>
+                        <h3>Phone</h3>
+                        <p>7386609119</p>
+                    </div>
+                    <div class="contact-card" data-aos="fade-up">
+                        <i data-lucide="share-2"></i>
+                        <h3>Social</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/Manisai47" target="_blank" rel="noopener noreferrer">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mani-sai-chary-rangu-9949562a3" target="_blank" rel="noopener noreferrer">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_bunny_47_" target="_blank" rel="noopener noreferrer">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Rangu Mani Sai Chary. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            setTimeout(() => {
+                follower.style.left = e.clientX + 'px';
+                follower.style.top = e.clientY + 'px';
+            }, 100);
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Active nav link
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const hero = document.querySelector('.hero');
+            const scrolled = window.pageYOffset;
+            hero.style.transform = translateY`(${scrolled * 0.5}px)`;
+        });
+
+        // Reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('[data-aos]').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
