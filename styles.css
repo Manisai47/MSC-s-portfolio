@@ -258,7 +258,7 @@ body {
 .about-image img {
     width: 100%;
     border-radius: 1rem;
-    box-shadow: 0 0 30px rgba(45, 212, 191, 0.2);
+    box-shadow: 0 0 30px rgba(45, 200, 191, 0.2);
 }
 
 .about-text {
