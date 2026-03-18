@@ -257,6 +257,7 @@ body {
 
 .about-image img {
     width: 100%;
+    height: 80%
     border-radius: 1rem;
     box-shadow: 0 0 30px rgba(45, 200, 191, 0.2);
 }
