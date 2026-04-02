@@ -62,11 +62,11 @@
     --primary: #2dd4bf;
     --secondary: #0f172a;
     --accent: #f43f5e;
-    --background: #0f172a;
+    --background: #0f172a; /* Change this to your preferred main background color */
     --text: #f8fafc;
     --text-secondary: #94a3b8;
-    --card-bg: #1e293b;
-    --nav-bg: rgba(15, 23, 42, 0.9);
+    --card-bg:  #1e293b; /* Change this for your project and skill cards */
+    --nav-bg: rgba(15, 23, 42, 0.9); /* Change this for your top navigation bar */
 }
 
 /* Base Styles */
