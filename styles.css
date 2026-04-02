@@ -427,12 +427,12 @@ body {
 
 .social-links a {
     color: var(--text-secondary);
+    transition: color 0.2s ease;
 }
 
 .social-links a:hover {
     color: var(--primary);
 }
-
 /* Footer */
 footer {
     background: var(--card-bg);
