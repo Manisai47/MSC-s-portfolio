@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <body>
-        <div id="loader">
-            <div class="spinner"></div>
-            <h1>Loading...</h1>
-        </div>
-        <div class="cursor"></div>
-        <div class="cursor-follower"></div>
-        <!-- Rest of your existing HTML -->
-    
-        <script>
-            // Hide the loader after the page has loaded
-            window.addEventListener("load", () => {
-                const loader = document.getElementById("loader");
-                loader.style.opacity = "0";
-                setTimeout(() => {
-                    loader.style.display = "none";
-                }, 500);
-            });
-        </script>
-    </body>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rangu Mani Sai Chary | Web Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+    <div id="loader">
+        <div class="spinner"></div>
+        <h1>Loading...</h1>
+    </div>
+
+    <script>
+        // Hide the loader after the page has loaded
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("loader");
+            loader.style.opacity = "0";
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+        });
+    </script>
+
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">MSC's Portfolio</div>
+            <div class="logo">Portfolio.</div>
             <div class="nav-links">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
@@ -246,7 +242,7 @@
                             <a href="https://github.com/Manisai47" target="_blank" rel="noopener noreferrer">
                                 <i class='bx bxl-github bx-sm'></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/mani-sai-chary-rangu-9949562a3" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/mani-sai-chary-r-9949562a3/" target="_blank" rel="noopener noreferrer">
                                 <i class='bx bxl-linkedin-square bx-sm'></i>
                             </a>
                             <a href="https://www.instagram.com/_bunny_47_" target="_blank" rel="noopener noreferrer">
@@ -318,7 +314,7 @@
         window.addEventListener('scroll', () => {
             const hero = document.querySelector('.hero');
             const scrolled = window.pageYOffset;
-            hero.style.transform = translateY`(${scrolled * 0.5}px)`;
+            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
         });
 
         // Reveal animations
